@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray's Brew | Checkout</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Ray's Brew</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span class="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h2>Checkout</h2>
+            <p>Complete your order details below.</p>
+        </section>
+
+        <section class="panel">
+            <h3>Order Summary</h3>
+            <div id="checkout-summary"></div>
+            <p class="cart-total">Total: <span id="checkout-total">₱0.00</span></p>
+
+            <form id="checkout-form" class="checkout-form">
+                <label for="customer-name">Full Name</label>
+                <input id="customer-name" name="customer-name" type="text" required>
+
+                <label for="customer-address">Address</label>
+                <input id="customer-address" name="customer-address" type="text" required>
+
+                <label for="payment-method">Payment Method</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="">Select payment method</option>
+                    <option value="Cash on Delivery">Cash on Delivery</option>
+                    <option value="GCash">GCash</option>
+                    <option value="Card">Card</option>
+                </select>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ray's Brew. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
