@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ray's Brew | Products</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Ray's Brew</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span class="cart-count">0</span>)</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h2>All Milk Tea Products</h2>
+            <p>Pick your favorite flavor and add it to your cart.</p>
+        </section>
+
+        <section class="product-grid">
+            <article class="product-card">
+                <img src="images/classic.jpg" alt="Classic Pearl Milk Tea">
+                <h3>Classic Pearl Milk Tea</h3>
+                <p>Black tea, milk, and tapioca pearls.</p>
+                <p class="price">₱39.50</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="classic">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/brownsugar.jpg" alt="Brown Sugar Boba">
+                <h3>Brown Sugar Boba</h3>
+                <p>Sweet brown sugar syrup with creamy milk tea.</p>
+                <p class="price">₱38.00</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="brownsugar">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/Matcha.jpg" alt="Matcha Milk Tea">
+                <h3>Matcha Milk Tea</h3>
+                <p>Smooth matcha flavor with fresh milk.</p>
+                <p class="price">₱28.00</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="matcha">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/taro.jpg" alt="Taro Milk Tea">
+                <h3>Taro Milk Tea</h3>
+                <p>Creamy taro blend with chewy tapioca pearls.</p>
+                <p class="price">₱32.75</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="taro">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/wintermelon.jpg" alt="Wintermelon Milk Tea">
+                <h3>Wintermelon Milk Tea</h3>
+                <p>Refreshing wintermelon flavor with light caramel sweetness.</p>
+                <p class="price">₱31.00</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="wintermelon">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/okinawa.jpg" alt="Okinawa Milk Tea">
+                <h3>Okinawa Milk Tea</h3>
+                <p>Rich roasted brown sugar taste with smooth milk tea base.</p>
+                <p class="price">₱36.00</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="okinawa">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/cookies.jpg" alt="Cookies and Cream Milk Tea">
+                <h3>Cookies and Cream Milk Tea</h3>
+                <p>Crushed cookies mixed with creamy milk tea.</p>
+                <p class="price">₱35.50</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="cookies">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/thai.jpg" alt="Thai Milk Tea">
+                <h3>Thai Milk Tea</h3>
+                <p>Bold Thai tea flavor with creamy sweet milk.</p>
+                <p class="price">₱30.50</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="thai">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="images/strawberry.jpg" alt="Strawberry Milk Tea">
+                <h3>Strawberry Milk Tea</h3>
+                <p>Sweet strawberry flavor blended with silky milk tea.</p>
+                <p class="price">₱40.50</p>
+                <div class="qty-wrap">
+                    <label>Qty <input class="qty-input" type="number" min="1" value="1"></label>
+                </div>
+                <button type="button" data-product-id="strawberry">Add to Cart</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ray's Brew. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
