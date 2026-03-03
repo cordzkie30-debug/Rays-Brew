@@ -31,7 +31,7 @@
         <section class="panel">
             <h3>Order Summary</h3>
             <div id="checkout-summary"></div>
-            <p class="cart-total">Total: <span id="checkout-total">₱0.00</span></p>
+            <p class="cart-total">Total: <span id="checkout-total">&#8369;0.00</span></p>
 
             <form id="checkout-form" class="checkout-form">
                 <label for="customer-name">Full Name</label>
@@ -39,6 +39,17 @@
 
                 <label for="customer-address">Address</label>
                 <input id="customer-address" name="customer-address" type="text" required>
+
+                <label for="customer-contact">Contact Number</label>
+                <input id="customer-contact" name="customer-contact" type="tel" inputmode="tel" placeholder="09XX XXX XXXX" title="Use a valid Philippine mobile number (example: 0912 345 6789)." required>
+
+                <label for="order-type">Order Type</label>
+                <select id="order-type" name="order-type" required>
+                    <option value="">Select order type</option>
+                    <option value="Pick Up">Pick Up</option>
+                    <option value="Deliver">Deliver</option>
+                </select>
+                <p class="delivery-fee-note">Note: Delivery orders include an additional &#8369;50.00 delivery fee.</p>
 
                 <label for="payment-method">Payment Method</label>
                 <select id="payment-method" name="payment-method" required>
@@ -50,6 +61,10 @@
 
                 <button type="submit">Place Order</button>
             </form>
+
+            <div class="cart-actions">
+                <a class="btn" href="cart.html">Back to Cart</a>
+            </div>
         </section>
     </main>
 
@@ -59,3 +74,4 @@
 </body>
 
 </html>
+
