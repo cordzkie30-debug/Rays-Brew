@@ -186,6 +186,8 @@ function renderCart() {
 function renderCheckout() {
   const summaryContainer = document.getElementById("checkout-summary");
   const totalElement = document.getElementById("checkout-total");
+  const subtotalElement = document.getElementById("checkout-subtotal");
+  const deliveryElement = document.getElementById("checkout-delivery");
   const checkoutForm = document.getElementById("checkout-form");
   const orderTypeSelect = document.getElementById("order-type");
   const addressInput = document.getElementById("customer-address");
@@ -198,7 +200,14 @@ function renderCheckout() {
 
   function updateCheckoutTotal() {
     const isDelivery = orderTypeSelect && orderTypeSelect.value === "Deliver";
-    const finalTotal = subtotal + (isDelivery ? DELIVERY_FEE : 0);
+    const deliveryFee = isDelivery ? DELIVERY_FEE : 0;
+    const finalTotal = subtotal + deliveryFee;
+    if (subtotalElement) {
+      subtotalElement.textContent = `\u20b1${subtotal.toFixed(2)}`;
+    }
+    if (deliveryElement) {
+      deliveryElement.textContent = `\u20b1${deliveryFee.toFixed(2)}`;
+    }
     totalElement.textContent = `\u20b1${finalTotal.toFixed(2)}`;
   }
 
