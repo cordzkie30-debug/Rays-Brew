@@ -270,6 +270,15 @@ button:hover {
   font-weight: 700;
 }
 
+.checkout-breakdown {
+  margin-top: 0.8rem;
+  padding-top: 0.2rem;
+}
+
+.checkout-breakdown .cart-total {
+  margin-top: 0.45rem;
+}
+
 .cart-actions {
   margin-top: 1rem;
   display: flex;
