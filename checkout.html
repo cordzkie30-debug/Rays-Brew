@@ -31,7 +31,12 @@
         <section class="panel">
             <h3>Order Summary</h3>
             <div id="checkout-summary"></div>
-            <p class="cart-total">Total: <span id="checkout-total">&#8369;0.00</span></p>
+
+            <div class="checkout-breakdown">
+                <p class="cart-total">Subtotal: <span id="checkout-subtotal">&#8369;0.00</span></p>
+                <p class="cart-total">Delivery Fee: <span id="checkout-delivery">&#8369;0.00</span></p>
+                <p class="cart-total">Total: <span id="checkout-total">&#8369;0.00</span></p>
+            </div>
 
             <form id="checkout-form" class="checkout-form">
                 <label for="customer-name">Full Name</label>
@@ -74,4 +79,3 @@
 </body>
 
 </html>
-
